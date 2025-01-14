@@ -20,6 +20,7 @@ import java.util.List;
 @Getter
 @Setter
 @RestController
+@RequestMapping("/api")  // Все URL этого контроллера будут начинаться с /api
 public class PointController implements Serializable {
     private final PointService pointService;
     @Autowired
